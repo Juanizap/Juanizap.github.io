@@ -1,0 +1,428 @@
+* {
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.caja {
+    display: none;
+}
+
+
+.figura {
+    position: relative;
+    display: block;
+    max-width: 75%;
+    height: auto;
+    /*width: 50vh;
+    height: 50vh;*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    z-index: 100;
+    left: 48%;
+    margin-top: 16.5vh;
+
+
+}
+
+#container {
+    position: absolute;
+    margin-bottom: 64vh;
+}
+
+
+
+#info {
+    position: absolute;
+    background-color: #fff;
+    bottom: 10%;
+    right: -20px;
+    z-index: 100;
+    padding: 2px;
+}
+
+
+.aside_izquierda {
+    position: absolute;
+    background: linear-gradient(0deg, rgba(113, 142, 157, 1) 0%, rgba(56, 75, 85, 1) 100%);
+    float: left;
+    width: 35%;
+    min-height: 410vh;
+    margin: 0;
+}
+
+.aside_izquierda h3 {
+    text-align: center;
+    color: #fff;
+}
+
+
+
+
+.educacion {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    padding: 0 15%;
+    text-align: center;
+    line-height: 250%;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 35%;
+}
+
+#educacionContainer {
+    padding-top: 149vh;
+
+}
+
+.habilidades {
+    margin-top: 28vh;
+}
+
+
+#article_derecha {
+    position: relative;
+    width: 65%;
+    height: 100%;
+    left: 35%;
+
+}
+
+#menu {
+    margin-left: 20px;
+    margin-bottom: 16vh;
+}
+
+#menu ul li {
+    display: inline;
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+#menu a {
+    color: rgb(32, 32, 32);
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: rgb(106, 136, 155);
+    transition: all 0.5s;
+}
+
+#perfilProfesional {
+    margin-bottom: 38vh;
+    padding-top: 20vh;
+}
+
+#perfilProfesional a {
+    color: black;
+}
+
+#experienciaLaboral {
+    margin-bottom: 33vh;
+
+}
+
+#franja {
+    position: relative;
+    width: 100%;
+    height: 43vh;
+    background: linear-gradient(90deg, rgba(119, 163, 177, 1) 0%, rgba(62, 78, 83, 1) 100%);
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.24);
+}
+
+#franja h1 {
+    height: 60%;
+    text-align: center;
+    font-size: 6vw;
+    line-height: 16vh;
+    padding-top: 11vh;
+    font-weight: 1000;
+}
+
+#franja h2 {
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 500;
+    padding-top: 1vh;
+
+}
+
+#textoContacto {
+    position: relative;
+    width: 100%;
+    height: 3%;
+    line-height: 60px;
+    display: block;
+    top: 5%;
+    z-index: 1000;
+    text-align: center;
+    padding-left: 27px;
+    margin-bottom: 24vh;
+
+}
+
+.contactoInfo {
+
+
+    padding-right: 70px;
+    font-weight: 800;
+
+}
+
+.textoContenido {
+    line-height: 250%;
+    width: 100%;
+    padding: 0 15%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#infoPersonal {
+    line-height: 250%;
+    width: 100%;
+    padding: 0 15%;
+    margin-bottom: 15%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.boton {
+    background-image: url(../img/flecha_abajo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 4vh;
+    bottom: 0;
+    width: 15vh;
+    height: 15vh;
+    padding-bottom: 37vh;
+    animation: mover 4s infinite;
+
+}
+
+.boton:hover {
+    cursor: pointer;
+    filter: brightness(250%);
+    transition: all 0.5s;
+}
+
+/*----animacion de flecha-----*/
+
+@keyframes mover {
+    0% {
+        top: 0;
+    }
+
+    25% {
+        top: -10px;
+    }
+
+    50% {
+        top: 0;
+    }
+
+    75% {
+        top: -10px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+
+
+/*---iconos varios---*/
+
+#textoMail::before {
+    content: "✉";
+    margin-right: 10px;
+}
+
+#textoTelefono::before {
+    content: "✆";
+    margin-right: 10px;
+}
+
+#textoCiudad::before {
+    content: "⚐";
+    margin-right: 10px;
+
+}
+
+.aside_izquierda .arrow::before {
+    content: '➤';
+}
+
+#iconoEducacion::before {
+    content: '🕮';
+    margin-right: 10px;
+}
+
+#iconoHabilidades::before {
+    content: '⚙';
+    margin-right: 10px;
+}
+
+#franjaResponsive {
+    display: none;
+}
+
+
+/*-----media querys------*/
+
+@media screen and (max-width: 800px) {
+
+
+    #article_derecha {
+
+        display: none;
+    }
+
+    .aside_izquierda {
+        display: none;
+    }
+
+    .figura {
+        left: 0;
+        margin: auto;
+        max-width: 80vw;
+        padding-top: 10vh;
+        border-radius: 70%;
+       
+
+
+    }
+
+
+    #franja {
+        display: none;
+    }
+
+    h1 {
+        display: block;
+        color: #fff;
+        margin-top: 20%;
+    }
+
+    #franjaResponsive h1 {
+        font-size: 10vw;
+    }
+
+
+    #menu {
+        display: none;
+    }
+
+
+
+    .caja:first-child {
+        display: block;
+        min-height: 150vh;
+        height: 66%;
+        width: 100%;
+
+
+    }
+
+    .caja {
+        display: block;
+        min-height: 120vh;
+        height: 66%;
+        width: 100%;
+
+
+    }
+
+    .par p{
+        font-size: 3.2vw;
+    }
+
+    .impar p{
+        font-size: 3vw;
+    }
+
+    .caja h1,
+    h2 {
+        color: #fff;
+        font-size: 10vw;
+        display: block;
+        text-align: center;
+        padding-top: 5vh;
+        font-weight: 600;
+        text-shadow: 1px 1px 14px rgba(0, 0, 0, 0.651);
+
+    }
+
+    #caja1 h2 {
+        color: #fff;
+        font-size: 7vw;
+    }
+
+    .impar {
+        background: linear-gradient(0deg, rgba(113, 142, 157, 1) 0%, rgba(56, 75, 85, 1) 100%);
+    }
+
+    .par {
+        background-color: #fff;
+    }
+
+    #textoContactoResponsive {
+        color: #fff;
+        text-shadow: 1px 1px 14px rgba(0, 0, 0, 0.651);
+        margin-top: 13vh;
+
+
+    }
+
+    .contactoInfoResp {
+        font-weight: 200;
+        display: flex;
+        justify-content: center;
+        margin-top: 5vh;
+
+
+    }
+
+    .impar h3 {
+        color: #fff;
+        text-align: center;
+        padding-top: 30vh;
+
+    }
+
+    .educacion {
+        top: 5%;
+    }
+
+    #experienciaLaboral {
+        padding-top: 18vh;
+    }
+
+    #iconoHabilidades {
+        margin-top: 0;
+    }
+
+    #infoPersonal {
+        padding: 20vh;
+    }
+
+    #caja6 {
+        min-height: 80vh;
+    }
+
+}
